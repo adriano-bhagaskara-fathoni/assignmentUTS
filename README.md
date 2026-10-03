@@ -19,3 +19,7 @@ The workflow in `.github/workflows/deploy.yml` deploys the repository root to Gi
 ## Source
 
 Portfolio content is based on `public/assets/CV-01.pdf`, including the education, objective, experience, skills, projects, and contact details represented on the page.
+
+## Group contributions
+
+Each teammate should build their portfolio in `members/<github-username>/` and leave the root portfolio files unchanged. Start from the reusable [portfolio template](members/_template/README.md), and follow the [contribution guide](CONTRIBUTING.md) for setup, content, and GitHub Pages subpath requirements.
