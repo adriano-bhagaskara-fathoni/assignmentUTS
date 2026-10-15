@@ -1,120 +1,162 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio website for Adriano Bhagas.">
-    <title>Adriano Bhagas — Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio Naufal Fadhlan — mahasiswa Teknik Informatika dan problem solver."
+    />
+    <title>Naufal Fadhlan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="#" aria-label="Adriano Bhagas home">AB<span>.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      <nav class="nav container" aria-label="Navigasi utama">
+        <a class="brand" href="#top" aria-label="Naufal Fadhlan — beranda">NF<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Buka navigasi</span>
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#tentang">Tentang</a>
+          <a href="#pengalaman">Pengalaman</a>
+          <a href="#keahlian">Keahlian</a>
+          <a class="nav-cta" href="mailto:naufalfadhlan72@gmail.com">Hubungi saya <span aria-hidden="true">↗</span></a>
+        </div>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="hero section-grid" aria-labelledby="hero-title">
+    <main id="top">
+      <section class="hero container">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-mark"></span> Portfolio / 2026</p>
-          <h1 id="hero-title">Adriano<br><em>Bhagaskara</em></h1>
-          <p class="hero-intro">Informatics Engineering student focused on product design, UI/UX, and meaningful digital experiences.</p>
-          <a class="button button-dark" href="#projects">Explore the work <span aria-hidden="true">↗</span></a>
+          <p class="eyebrow">Teknik Informatika · Tangerang Selatan</p>
+          <h1>Membangun masa depan, <em>satu solusi</em> pada satu waktu.</h1>
+          <p class="hero-text">
+            Halo, saya Naufal — mahasiswa Teknik Informatika yang senang memecahkan masalah,
+            belajar hal baru, dan bekerja bersama tim untuk menghasilkan sesuatu yang berdampak.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#pengalaman">Lihat perjalanan saya <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="mailto:naufalfadhlan72@gmail.com">naufalfadhlan72@gmail.com <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div class="hero-art" aria-label="Abstract monogram artwork" role="img">
-          <div class="art-circle"></div>
-          <div class="art-line art-line-one"></div>
-          <div class="art-line art-line-two"></div>
-          <span class="art-label">A / B</span>
-          <span class="art-note">selected<br>works</span>
-        </div>
-        <div class="hero-meta">
-          <span>01</span>
-          <span>Scroll to discover</span>
-          <span class="meta-rule"></span>
-        </div>
-      </section>
-
-      <section class="about section-grid" id="about" aria-labelledby="about-title">
-        <div class="section-number">02</div>
-        <div>
-          <p class="eyebrow">A little context</p>
-          <h2 id="about-title">Made with<br><em>intention.</em></h2>
-        </div>
-        <div class="about-copy">
-          <p>Informatics Engineering student with a background in graphic design and digital media, passionate about using technology and design to solve real-world problems.</p>
-          <p class="muted">Interested in product development, UI/UX design, and creating meaningful user experiences. Eager to learn, collaborate, and transform ideas into impactful digital solutions.</p>
+        <div class="hero-art" aria-label="Inisial Naufal Fadhlan">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="initials">NF<span>.</span></div>
+          <p>Curious<br />by nature.</p>
         </div>
       </section>
 
-      <section class="timeline-section" id="experience" aria-labelledby="experience-title">
-        <div class="section-grid section-heading">
-          <div class="section-number">03</div>
-          <div><p class="eyebrow">The journey</p><h2 id="experience-title">Experience &amp;<br><em>education.</em></h2></div>
+      <section class="intro-band" id="tentang">
+        <div class="container intro-grid">
+          <p class="section-label">01 / Tentang saya</p>
+          <div>
+            <h2>Belajar dengan rasa ingin tahu, <span>bertumbuh lewat pengalaman.</span></h2>
+            <p>
+              Saat ini saya menempuh S1 Teknik Informatika di UIN Syarif Hidayatullah Jakarta.
+              Saya tertarik pada pemrograman, logika komputasi, dan bagaimana teknologi dapat
+              membantu orang menyelesaikan masalah sehari-hari.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="pengalaman">
+        <div class="section-heading">
+          <p class="section-label">02 / Perjalanan</p>
+          <h2>Pengalaman & pendidikan</h2>
         </div>
         <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-date">2025—</span>
-            <div><h3>UIN Syarif Hidayatullah Jakarta</h3><p>Bachelor of Informatics Engineering · Cumulative GPA: 3.85 / 4.00</p></div>
-            <span class="timeline-arrow" aria-hidden="true">↗</span>
+          <article class="timeline-item">
+            <div class="timeline-date">2025 — Sekarang</div>
+            <div class="timeline-content">
+              <h3>S1 Teknik Informatika</h3>
+              <p class="muted">Universitas Islam Negeri (UIN) Syarif Hidayatullah Jakarta</p>
+              <p>Mendalami dasar pemrograman, logika komputasi, dan cara berpikir analitis untuk membangun solusi digital.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>Panitia Bakti Sosial “Etika Berdigital”</h3>
+              <p class="muted">SMPIP Baitul Maal</p>
+              <p>Berpartisipasi dalam penyelenggaraan acara pengabdian masyarakat yang berfokus pada edukasi literasi digital dan etika berdigital.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2022 — 2025</div>
+            <div class="timeline-content">
+              <h3>MA Annajah</h3>
+              <p class="muted">Pendidikan menengah</p>
+              <p>Membangun fondasi akademik, kolaborasi, dan rasa ingin tahu yang terus saya bawa hingga hari ini.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills-section" id="keahlian">
+        <div class="container skills-grid">
+          <div>
+            <p class="section-label">03 / Keahlian</p>
+            <h2>Hal-hal yang saya <span>kuasai.</span></h2>
           </div>
-          <div class="timeline-item">
-            <span class="timeline-date">2026—</span>
-            <div><h3>CS50X · Harvard University</h3><p>Introduction to Computer Science</p></div>
-            <span class="timeline-arrow" aria-hidden="true">↗</span>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">2025—</span>
-            <div><h3>Social Media Graphic Designer</h3><p>OtakuTalkz &amp; Rawrnime · Visual content, design templates, and brand identity.</p></div>
-            <span class="timeline-arrow" aria-hidden="true">↗</span>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">2025—26</span>
-            <div><h3>Publication &amp; Documentations</h3><p>Various student &amp; community programs · Event documentation, photography, and promotion.</p></div>
-            <span class="timeline-arrow" aria-hidden="true">↗</span>
+          <div class="skill-list">
+            <div class="skill"><span>01</span><strong>Dasar Pemrograman & Logika Komputasi</strong></div>
+            <div class="skill"><span>02</span><strong>Analisis Masalah <small>(Problem Solving)</small></strong></div>
+            <div class="skill"><span>03</span><strong>Microsoft Office & Google Workspace</strong></div>
+            <div class="skill"><span>04</span><strong>Manajemen Acara & Kerja Sama Tim</strong></div>
           </div>
         </div>
       </section>
 
-      <section class="skills section-grid" id="skills" aria-labelledby="skills-title">
-        <div class="section-number">04</div>
-        <div><p class="eyebrow">What I bring</p><h2 id="skills-title">Skills &amp;<br><em>strengths.</em></h2></div>
-        <div class="skill-list" aria-label="Skills">
-          <span>01 / UI/UX Design</span>
-          <span>02 / Graphic Design</span>
-          <span>03 / User Research</span>
-          <span>04 / Figma · Adobe Photoshop · HTML · CSS</span>
+      <section class="section container credentials">
+        <div class="section-heading">
+          <p class="section-label">04 / Sertifikasi</p>
+          <h2>Milestone yang berarti.</h2>
+        </div>
+        <div class="credential-grid">
+          <article class="credential-card">
+            <p class="card-number">01</p>
+            <h3>First Certificate in English</h3>
+            <p>Cambridge English Level 1 Certificate in ESOL International / B2</p>
+            <span>Overall Score 165 · Grade C · Juni 2023</span>
+          </article>
+          <article class="credential-card">
+            <p class="card-number">02</p>
+            <h3>Yamaha Grade Examination</h3>
+            <p>Drum Grade 6 · Yamaha Music Foundation</p>
+            <span>Agustus 2024</span>
+          </article>
+          <article class="credential-card">
+            <p class="card-number">03</p>
+            <h3>Kontes Robot Nasional 2015</h3>
+            <p>Peserta · Racer Robotic</p>
+            <span>November 2015</span>
+          </article>
         </div>
       </section>
 
-      <section class="projects" id="projects" aria-labelledby="projects-title">
-        <div class="section-grid section-heading">
-          <div class="section-number">05</div>
-          <div><p class="eyebrow">Selected work</p><h2 id="projects-title">Projects<br><em>in focus.</em></h2></div>
+      <section class="contact-section">
+        <div class="container contact-inner">
+          <p class="section-label">05 / Mari terhubung</p>
+          <h2>Punya ide atau ingin<br /><em>berkenalan?</em></h2>
+          <a class="button button-light" href="mailto:naufalfadhlan72@gmail.com">Kirim email <span aria-hidden="true">↗</span></a>
+          <p class="contact-details">naufalfadhlan72@gmail.com <span>·</span> +62 812 9716 5910</p>
         </div>
-        <div class="project-grid">
-          <article class="project-card project-card-dark"><span class="project-index">01</span><div><p class="project-type">Concept project</p><h3>AKIA<br>Platform<span>.</span></h3><p class="project-description">A digital transformation platform for traditional building material businesses.</p></div><span class="project-link" aria-hidden="true">↗</span></article>
-          <article class="project-card project-card-outline"><span class="project-index">02</span><div><p class="project-type">Concept project</p><h3>TolongIn<br><span>&amp;</span> KerjaIn<span>.</span></h3><p class="project-description">Flexible work and everyday-task services designed to make local opportunities more accessible.</p></div><span class="project-link" aria-hidden="true">↗</span></article>
-        </div>
-      </section>
-
-      <section class="contact section-grid" id="contact" aria-labelledby="contact-title">
-        <div class="section-number">06</div>
-        <div><p class="eyebrow">Start a conversation</p><h2 id="contact-title">Let's make<br><em>something.</em></h2></div>
-        <div class="contact-copy"><p>Open to opportunities in product development, UI/UX design, and digital experiences.</p><p><a href="mailto:adrianobhagaskara@gmail.com">adrianobhagaskara@gmail.com</a><br><a href="https://www.behance.net/adrianobhagask" rel="noreferrer">behance.net/adrianobhagask</a><br><a href="tel:+6289514070666">+62 895 1407 0666</a></p><a class="button button-dark" href="public/assets/CV-01.pdf">Download CV <span aria-hidden="true">↓</span></a></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>© 2026 Adriano Bhagas</span><span>Built with care</span><a href="#main">Back to top ↑</a>
+    <footer class="footer container">
+      <p>© <span id="year"></span> Naufal Fadhlan</p>
+      <p>Dibuat dengan rasa ingin tahu.</p>
     </footer>
     <script src="script.js"></script>
   </body>

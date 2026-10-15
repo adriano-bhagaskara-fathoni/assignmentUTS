@@ -1,21 +1,22 @@
-# Adriano Bhagas — Portfolio
+# Naufal Fadhlan — Portfolio
 
-A lightweight, responsive portfolio site built with semantic HTML, CSS, and a small JavaScript navigation enhancement. The visual language uses a black-and-white editorial layout with a lime accent, inspired by minimalist infographic CVs.
+Portfolio statis yang dibuat berdasarkan CV Naufal Fadhlan. Situs ini menggunakan HTML, CSS, dan JavaScript vanilla sehingga tidak membutuhkan proses build atau dependency tambahan.
 
-## Local preview
+## Menjalankan secara lokal
 
-No build step is required. From the repository root, run a local static server:
+Buka `index.html` langsung di browser, atau jalankan server statis sederhana:
 
 ```bash
-python3 -m http.server 8000
+python -m http.server 8000
 ```
 
-Then open <http://localhost:8000>.
+Kemudian buka <http://localhost:8000>.
 
-## GitHub Pages deployment
+## Mengaktifkan GitHub Pages
 
-The workflow in `.github/workflows/deploy.yml` deploys the repository root to GitHub Pages whenever `main` is updated. In the repository settings, set **Pages → Source** to **GitHub Actions**. The workflow can also be started manually from the Actions tab.
+1. Push repository ke GitHub.
+2. Buka **Settings → Pages**.
+3. Pada **Build and deployment → Source**, pilih **GitHub Actions**.
+4. Push ke branch `main` (atau jalankan workflow **Deploy to GitHub Pages** secara manual dari tab **Actions**).
 
-## Source
-
-Portfolio content is based on `public/assets/CV-01.pdf`, including the education, objective, experience, skills, projects, and contact details represented on the page.
+Workflow di `.github/workflows/deploy-pages.yml` akan mengunggah seluruh situs sebagai artifact dan menerbitkannya ke GitHub Pages setiap kali ada push ke `main`.
